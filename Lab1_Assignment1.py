@@ -1,8 +1,10 @@
+from random import choice
+
 class SimpleVacuumEnvironment:
   def __init__(self, rooms):
     '''initially everything is dirty'''
     self.rooms = [{ 'name': room, 'dirty': True } for room in rooms] 
-    self.agent_position = 0
+    self.agent_position = choice([0,1])
   
   def is_room_dirty(self):
     """Checks if the current room is dirty."""
@@ -12,8 +14,16 @@ class SimpleVacuumEnvironment:
   def clean_room(self):
     """ Cleans the current room where the agent is located."""
     current_room = self.rooms[self.agent_position]
+    
+    if not (current_room['dirty']):
+      print(f"{self.rooms[self.agent_position]['name']} is already clean")
+      print("Moving to next room \n")
+      self.agent_position = (self.agent_position + 1)%2
+      self.clean_room()
+      return
+    
     current_room['dirty'] = False
-    print('Room Cleaned!')
+    print(f"{self.rooms[self.agent_position]['name'] Cleaned!")
 
   def move_agent(self, room_name):
     """ Moves the agent to the specified room. """
