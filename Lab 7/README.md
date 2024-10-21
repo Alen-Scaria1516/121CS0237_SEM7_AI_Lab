@@ -1,5 +1,5 @@
 ## Lab 7 : Introduction to GNU Prolog
-Checkout Logic Programming.pptx to get started.
+Checkout [Logic Programming.pptx](./Prolog%20Programming/Logic%20Programming.pptx) to get started.
 #### Exercies
 1.  Write a program to put facts indicating that a lion, a tiger, and a cow are animals into the database and record that two (lion and tiger) are carnivores. Save your program to a disk file and load it. Check that the database is correct using the** listing**.
 2. Devise and test goals to find:
