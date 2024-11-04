@@ -1,0 +1,4 @@
+(drive truck2 cityb citya)
+(load package1 truck2 citya)
+(drive truck2 citya cityb)
+(unload package1 truck2 cityb)
