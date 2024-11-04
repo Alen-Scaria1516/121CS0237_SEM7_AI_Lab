@@ -1,5 +1,5 @@
 ## Lab 8 : Introduction to PDDL
-Checkout 0_intro_PDDL.pptx to get started.
+Checkout [0_intro_PDDL.pptx](https://github.com/Alen-Scaria1516/121CS0237_SEM7_AI_Lab/blob/main/Lab%208/0_intro_PDDL.pptx) to get started.
 #### Exercies
 1. The domain is a simple trucking domain with three types of objects: trucks, cities, and packages. Define this planning domain using PDDL. Test your domain on a problem that requires moving packages from one location to another. 
 2. In the "Block World“, the goal is to move blocks in a world with two locations to achieve a specific desired state or configuration.
